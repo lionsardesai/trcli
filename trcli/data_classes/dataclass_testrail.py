@@ -27,7 +27,7 @@ class TestRailSeparatedStep:
 class TestRailResult:
     """Class for creating Test Rail result for cases"""
 
-    case_id: int = field(default=None, skip_if_default=True)
+    case_id: Optional[int] = field(default=None, skip_if_default=True)
     status_id: int = field(default=None, skip_if_default=True)
     comment: str = field(default=None, skip_if_default=True)
     version: str = field(default=None, skip_if_default=True)
